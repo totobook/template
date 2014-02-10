@@ -4,8 +4,7 @@
  * @param  {string} num The value to parse.
  * @return {number} Return Description number.
  */
-function parseDecimal(num)
-{
+var parseDecimal = function(num) {
 	var parsed_num = parseInt(num, 10);
 	return isNaN(parsed_num) ? 0 : parsed_num;
 }
@@ -15,8 +14,7 @@ function parseDecimal(num)
  * @param  {object}  obj The value to check.
  * @return {Boolean} Return to results of verification.
  */
-function is_array(obj)
-{
+var is_array = function(obj) {
 	return obj &&
 		typeof obj === 'object' &&
 		typeof obj.length === 'number' &&
